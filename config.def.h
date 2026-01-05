@@ -11,7 +11,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 
 
 static const char *fonts[]          = { 
-	"hack:size=15"};
+	"Hack Nerd Font:size=15",
+	"Noto Sans CJK JP:size=10",
+	"Noto Color Emoji:size=10"
+};
 static const char dmenufont[]       = "hack:size=15";
 static unsigned int baralpha        = 0xd0;
 static unsigned int borderalpha     = OPAQUE;
@@ -28,7 +31,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5"};
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -76,8 +79,8 @@ static const char *brupcmd[] = { "brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[] = { "brightnessctl", "set", "10%-", NULL };
 
 /* Volume commands */
-static const char *upvol[]   = { "/usr/bin/wpctl", "set-volume", "-l", "1.5", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
-static const char *downvol[] = { "/usr/bin/wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
+static const char *upvol[]   = { "/usr/bin/wpctl", "set-volume", "-l", "1.5", "@DEFAULT_AUDIO_SINK@", "2%+", NULL };
+static const char *downvol[] = { "/usr/bin/wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "2%-", NULL };
 static const char *mutevol[] = { "/usr/bin/wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 
 static const Key keys[] = {
